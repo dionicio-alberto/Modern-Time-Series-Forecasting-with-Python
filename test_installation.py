@@ -4,9 +4,7 @@ import pandas as pd
 df = pd.DataFrame(x)
 import torch
 d = torch.zeros(3)
-print(
-    f"GPU: {torch.cuda.is_available()} | # of GPU: {torch.cuda.device_count()}| Default GPU Name: {torch.cuda.get_device_name(0)}"
-)
+device = torch.device("cpu")
 import matplotlib.pyplot as plt
 import plotly.express as px
 import os
